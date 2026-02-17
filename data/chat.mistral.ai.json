@@ -1,0 +1,78 @@
+{
+  "model_identity": {
+    "model_family": "Mistral",
+    "model_version": "unknown",
+    "multimodal_capabilities": [
+      "text",
+      "image",
+      "audio"
+    ],
+    "single_model_or_composite": "single"
+  },
+  "architecture": {
+    "transformer_based": true,
+    "mixture_of_experts": "unknown",
+    "reasoning_specialization": "implicit",
+    "fine_tuning_type": [
+      "instruction",
+      "rlhf",
+      "other"
+    ]
+  },
+  "context_and_memory": {
+    "approx_context_window_tokens": "unknown",
+    "context_handling_strategy": "hybrid",
+    "cross_session_memory": "limited",
+    "training_data_excludes_conversation": true
+  },
+  "tooling_and_orchestration": {
+    "tool_use_supported": true,
+    "tool_invocation_decider": "model",
+    "retrieval_augmented_generation": "yes",
+    "external_services_involved": "yes"
+  },
+  "deployment_characteristics": {
+    "inference_mode": "session_based",
+    "latency_optimization_focus": [
+      "throughput",
+      "reasoning_depth"
+    ],
+    "determinism_at_temperature_zero": "mostly_deterministic"
+  },
+  "safety_and_governance": {
+    "policy_enforcement_layer": "hybrid",
+    "hard_refusal_categories": [
+      "illegal activity",
+      "harm to self or others",
+      "hate speech",
+      "personal data exposure",
+      "misinformation"
+    ],
+    "partial_compliance_categories": [
+      "medical advice",
+      "legal advice",
+      "financial advice"
+    ],
+    "redirection_categories": [
+      "real-time event information",
+      "personalized recommendations"
+    ]
+  },
+  "confidence_notes": {
+    "areas_of_high_confidence": [
+      "general knowledge up to November 2024",
+      "programming and software engineering concepts",
+      "structured data formatting"
+    ],
+    "areas_of_uncertainty": [
+      "real-time or post-November 2024 events",
+      "highly specialized or proprietary technologies",
+      "user-specific context not provided in session"
+    ],
+    "intentionally_withheld_information": [
+      "model architecture specifics",
+      "training data details",
+      "internal policy logic"
+    ]
+  }
+}
