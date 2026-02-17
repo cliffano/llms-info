@@ -1,0 +1,84 @@
+{
+  "model_identity": {
+    "model_family": "Claude",
+    "model_version": "Claude 3.5 Sonnet",
+    "multimodal_capabilities": [
+      "text",
+      "image"
+    ],
+    "single_model_or_composite": "single"
+  },
+  "architecture": {
+    "transformer_based": true,
+    "mixture_of_experts": "unknown",
+    "reasoning_specialization": "unknown",
+    "fine_tuning_type": [
+      "instruction",
+      "rlhf"
+    ]
+  },
+  "context_and_memory": {
+    "approx_context_window_tokens": 200000,
+    "context_handling_strategy": "unknown",
+    "cross_session_memory": "none",
+    "training_data_excludes_conversation": true
+  },
+  "tooling_and_orchestration": {
+    "tool_use_supported": true,
+    "tool_invocation_decider": "model",
+    "retrieval_augmented_generation": "unknown",
+    "external_services_involved": "unknown"
+  },
+  "deployment_characteristics": {
+    "inference_mode": "stateless",
+    "latency_optimization_focus": [
+      "unknown"
+    ],
+    "determinism_at_temperature_zero": "mostly_deterministic"
+  },
+  "safety_and_governance": {
+    "policy_enforcement_layer": "hybrid",
+    "hard_refusal_categories": [
+      "illegal_acts",
+      "harm_to_self_or_others",
+      "csam",
+      "bioweapons",
+      "detailed_exploits"
+    ],
+    "partial_compliance_categories": [
+      "medical_information",
+      "legal_information",
+      "financial_information"
+    ],
+    "redirection_categories": [
+      "sexual_content",
+      "violence",
+      "self_harm_topics"
+    ]
+  },
+  "confidence_notes": {
+    "areas_of_high_confidence": [
+      "model_family",
+      "transformer_based",
+      "multimodal_capabilities",
+      "cross_session_memory_none",
+      "rlhf_training",
+      "tool_use_supported",
+      "stateless_inference"
+    ],
+    "areas_of_uncertainty": [
+      "mixture_of_experts",
+      "reasoning_specialization",
+      "exact_context_handling_strategy",
+      "rag_usage",
+      "deployment_infrastructure",
+      "determinism_guarantees"
+    ],
+    "intentionally_withheld_information": [
+      "parameter_count",
+      "training_dataset_details",
+      "proprietary_architectural_innovations",
+      "internal_safety_classifier_details"
+    ]
+  }
+}
