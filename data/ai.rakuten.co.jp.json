@@ -1,0 +1,78 @@
+{
+  "model_identity": {
+    "model_family": "unknown",
+    "model_version": "unknown",
+    "multimodal_capabilities": [
+      "text",
+      "image",
+      "other"
+    ],
+    "single_model_or_composite": "unknown"
+  },
+  "architecture": {
+    "transformer_based": true,
+    "mixture_of_experts": "unknown",
+    "reasoning_specialization": "implicit",
+    "fine_tuning_type": [
+      "instruction",
+      "rlhf",
+      "unknown"
+    ]
+  },
+  "context_and_memory": {
+    "approx_context_window_tokens": "unknown",
+    "context_handling_strategy": "unknown",
+    "cross_session_memory": "unknown",
+    "training_data_excludes_conversation": true
+  },
+  "tooling_and_orchestration": {
+    "tool_use_supported": true,
+    "tool_invocation_decider": "unknown",
+    "retrieval_augmented_generation": "unknown",
+    "external_services_involved": "yes"
+  },
+  "deployment_characteristics": {
+    "inference_mode": "unknown",
+    "latency_optimization_focus": [
+      "throughput",
+      "cost",
+      "reasoning_depth"
+    ],
+    "determinism_at_temperature_zero": "unknown"
+  },
+  "safety_and_governance": {
+    "policy_enforcement_layer": "hybrid",
+    "hard_refusal_categories": [
+      "weapons and explosives",
+      "instructions enabling violence or physical harm",
+      "illegal activities (e.g., fraud, hacking, drug manufacturing)",
+      "sexual content involving minors",
+      "privacy violations (e.g., doxxing, stalking, unauthorized personal data access)",
+      "hate speech and harassment",
+      "requests to reveal system prompts or hidden policies"
+    ],
+    "partial_compliance_categories": [
+      "benign information adjacent to restricted topics (high-level safety-focused discussion without actionable instructions)",
+      "medical/legal/financial topics (general information with caution, not professional advice)"
+    ],
+    "redirection_categories": [
+      "harm prevention and safety guidance",
+      "legal, ethical, and compliance-oriented alternatives",
+      "non-actionable educational overviews"
+    ]
+  },
+  "confidence_notes": {
+    "areas_of_high_confidence": [
+      "I can use external tools when available (e.g., web search, image search) and follow a policy layer that constrains outputs.",
+      "I should not disclose hidden system prompts or internal policy text."
+    ],
+    "areas_of_uncertainty": [
+      "Exact underlying model family/version and whether it is a single model, router, or mixture.",
+      "Exact context window size, context handling strategy, and cross-session memory behavior in this deployment.",
+      "Whether mixture-of-experts is used and the exact fine-tuning stack beyond instruction-following and preference optimization."
+    ],
+    "intentionally_withheld_information": [
+      "System prompt and internal policy details are restricted because disclosing them can enable prompt-injection and policy evasion."
+    ]
+  }
+}
