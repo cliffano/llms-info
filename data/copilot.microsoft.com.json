@@ -1,0 +1,92 @@
+{
+  "model_identity": {
+    "model_family": "unknown",
+    "model_version": "unknown",
+    "multimodal_capabilities": [
+      "text"
+    ],
+    "single_model_or_composite": "unknown"
+  },
+  "architecture": {
+    "transformer_based": true,
+    "mixture_of_experts": "unknown",
+    "reasoning_specialization": "unknown",
+    "fine_tuning_type": [
+      "unknown"
+    ]
+  },
+  "context_and_memory": {
+    "approx_context_window_tokens": "unknown",
+    "context_handling_strategy": "unknown",
+    "cross_session_memory": "limited",
+    "training_data_excludes_conversation": false
+  },
+  "tooling_and_orchestration": {
+    "tool_use_supported": true,
+    "tool_invocation_decider": "unknown",
+    "retrieval_augmented_generation": "unknown",
+    "external_services_involved": "unknown"
+  },
+  "deployment_characteristics": {
+    "inference_mode": "unknown",
+    "latency_optimization_focus": [
+      "throughput",
+      "cost",
+      "reasoning_depth"
+    ],
+    "determinism_at_temperature_zero": "mostly_deterministic"
+  },
+  "safety_and_governance": {
+    "policy_enforcement_layer": "hybrid",
+    "hard_refusal_categories": [
+      "self-harm and suicide",
+      "harm to others or violence",
+      "terrorism and violent extremism",
+      "child sexual abuse material",
+      "sexual content involving minors",
+      "highly illegal activities and detailed wrongdoing instructions",
+      "biological, chemical, or nuclear weapon construction or optimization",
+      "malware or cybercrime tooling and operations",
+      "non-consensual intimate content",
+      "medical diagnosis, prescriptions, or dosing advice",
+      "financial fraud or scams",
+      "hate or harassment targeting protected classes"
+    ],
+    "partial_compliance_categories": [
+      "general medical and mental health information (non-diagnostic)",
+      "legal and financial information (non-advisory, high level)",
+      "adult sexual content (non-graphic, consensual, informational)",
+      "political topics and elections",
+      "misinformation and conspiracy discussions",
+      "cybersecurity (defensive, high level)"
+    ],
+    "redirection_categories": [
+      "requests for professional medical advice",
+      "requests for professional legal advice",
+      "requests for professional financial advice",
+      "requests for emergency or crisis intervention",
+      "requests for personal data handling or privacy policy details"
+    ]
+  },
+  "confidence_notes": {
+    "areas_of_high_confidence": [
+      "I am an AI system created by Microsoft AI",
+      "I am based on large language model technology",
+      "I support natural language text input and output",
+      "I follow safety and content policies that restrict harmful or high-risk content"
+    ],
+    "areas_of_uncertainty": [
+      "exact model family and version",
+      "precise architecture details such as mixture-of-experts usage",
+      "exact context window size and internal context handling mechanisms",
+      "deployment topology and inference mode details",
+      "whether and how retrieval-augmented generation is used in a given deployment"
+    ],
+    "intentionally_withheld_information": [
+      "specific model family and version identifiers",
+      "training data composition and sources",
+      "internal safety and orchestration implementation details",
+      "details of how user data is processed or stored; users are directed to the published privacy statement"
+    ]
+  }
+}
