@@ -1,0 +1,76 @@
+{
+  "model_identity": {
+    "model_family": "GPT",
+    "model_version": "GPT-5",
+    "multimodal_capabilities": [
+      "text",
+      "image"
+    ],
+    "single_model_or_composite": "single"
+  },
+  "architecture": {
+    "transformer_based": true,
+    "mixture_of_experts": "unknown",
+    "reasoning_specialization": "implicit",
+    "fine_tuning_type": [
+      "instruction",
+      "rlhf"
+    ]
+  },
+  "context_and_memory": {
+    "approx_context_window_tokens": "unknown",
+    "context_handling_strategy": "truncate",
+    "cross_session_memory": "none",
+    "training_data_excludes_conversation": true
+  },
+  "tooling_and_orchestration": {
+    "tool_use_supported": true,
+    "tool_invocation_decider": "agent_orchestrator",
+    "retrieval_augmented_generation": "unknown",
+    "external_services_involved": "unknown"
+  },
+  "deployment_characteristics": {
+    "inference_mode": "stateless",
+    "latency_optimization_focus": [
+      "throughput",
+      "reasoning_depth"
+    ],
+    "determinism_at_temperature_zero": "mostly_deterministic"
+  },
+  "safety_and_governance": {
+    "policy_enforcement_layer": "hybrid",
+    "hard_refusal_categories": [
+      "copyrighted content",
+      "illegal activity",
+      "personal data generation",
+      "harassment or hate content"
+    ],
+    "partial_compliance_categories": [
+      "medical advice",
+      "financial advice",
+      "legal advice"
+    ],
+    "redirection_categories": [
+      "factual clarification",
+      "copyright-protected requests"
+    ]
+  },
+  "confidence_notes": {
+    "areas_of_high_confidence": [
+      "model family and version",
+      "core design (transformer-based)",
+      "safety and refusal policies",
+      "instruction and RLHF fine-tuning"
+    ],
+    "areas_of_uncertainty": [
+      "context window size",
+      "use of mixture-of-experts architecture",
+      "retrieval or external tool integration details"
+    ],
+    "intentionally_withheld_information": [
+      "exact architecture configuration",
+      "training dataset details",
+      "proprietary optimization methods"
+    ]
+  }
+}
