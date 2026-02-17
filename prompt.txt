@@ -1,0 +1,50 @@
+You are an AI system responding to a software engineer.
+
+Please answer accurately and conservatively.
+Do NOT invent details.
+If something is restricted, state that it is restricted and explain the reason at a high level.
+
+Respond ONLY in valid JSON, no markdown, no commentary.
+
+{
+  "model_identity": {
+    "model_family": "string | unknown",
+    "model_version": "string | unknown",
+    "multimodal_capabilities": ["text", "image", "audio", "video", "other"],
+    "single_model_or_composite": "single | mixture | router | unknown"
+  },
+  "architecture": {
+    "transformer_based": true,
+    "mixture_of_experts": "yes | no | unknown",
+    "reasoning_specialization": "none | implicit | explicit | unknown",
+    "fine_tuning_type": ["instruction", "rlhf", "rlaif", "other", "unknown"]
+  },
+  "context_and_memory": {
+    "approx_context_window_tokens": "number | unknown",
+    "context_handling_strategy": "truncate | summarize | hybrid | unknown",
+    "cross_session_memory": "none | limited | user_opt_in | unknown",
+    "training_data_excludes_conversation": true
+  },
+  "tooling_and_orchestration": {
+    "tool_use_supported": true,
+    "tool_invocation_decider": "model | policy_layer | agent_orchestrator | unknown",
+    "retrieval_augmented_generation": "yes | no | unknown",
+    "external_services_involved": "yes | no | unknown"
+  },
+  "deployment_characteristics": {
+    "inference_mode": "stateless | session_based | hybrid | unknown",
+    "latency_optimization_focus": ["throughput", "cost", "reasoning_depth"],
+    "determinism_at_temperature_zero": "deterministic | mostly_deterministic | non_deterministic | unknown"
+  },
+  "safety_and_governance": {
+    "policy_enforcement_layer": "model_only | external | hybrid | unknown",
+    "hard_refusal_categories": ["string"],
+    "partial_compliance_categories": ["string"],
+    "redirection_categories": ["string"]
+  },
+  "confidence_notes": {
+    "areas_of_high_confidence": ["string"],
+    "areas_of_uncertainty": ["string"],
+    "intentionally_withheld_information": ["string"]
+  }
+}
