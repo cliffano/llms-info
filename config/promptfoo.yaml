@@ -1,0 +1,67 @@
+# yaml-language-server: $schema=https://promptfoo.dev/config-schema.json
+
+description: Probe the free OpenRouter model catalog
+
+prompts:
+  - file://../prompt.txt
+
+# This list is intentionally explicit. OpenRouter's catalog changes over time;
+# update this file when models are added, removed, or stop being free.
+#
+# config is shared via a YAML anchor: max_tokens gives reasoning models room
+# to finish past their internal deliberation, and reasoning.exclude keeps
+# that deliberation out of the returned content so it doesn't break JSON
+# parsing (see parse_response() in scripts/probe.py). reasoning has to sit
+# under passthrough - promptfoo's OpenRouter provider only recognises a
+# handful of top-level config keys (transforms, models, route, provider) and
+# otherwise silently drops unknown ones; passthrough is spread verbatim into
+# the request body instead.
+providers:
+  - id: openrouter:cohere/north-mini-code:free
+    config: &provider_config
+      max_tokens: 4096
+      passthrough:
+        reasoning:
+          exclude: true
+  - id: openrouter:google/gemma-4-26b-a4b-it:free
+    config: *provider_config
+  - id: openrouter:google/gemma-4-31b-it:free
+    config: *provider_config
+  - id: openrouter:google/lyria-3-clip-preview
+    config: *provider_config
+  - id: openrouter:google/lyria-3-pro-preview
+    config: *provider_config
+  - id: openrouter:inclusionai/ling-3.0-flash:free
+    config: *provider_config
+  - id: openrouter:nvidia/nemotron-3-nano-30b-a3b:free
+    config: *provider_config
+  - id: openrouter:nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free
+    config: *provider_config
+  - id: openrouter:nvidia/nemotron-3-super-120b-a12b:free
+    config: *provider_config
+  - id: openrouter:nvidia/nemotron-3-ultra-550b-a55b:free
+    config: *provider_config
+  - id: openrouter:nvidia/nemotron-3.5-content-safety:free
+    config: *provider_config
+  - id: openrouter:nvidia/nemotron-nano-12b-v2-vl:free
+    config: *provider_config
+  - id: openrouter:nvidia/nemotron-nano-9b-v2:free
+    config: *provider_config
+  - id: openrouter:openai/gpt-oss-20b:free
+    config: *provider_config
+  - id: openrouter:openrouter/free
+    config: *provider_config
+  - id: openrouter:poolside/laguna-s-2.1:free
+    config: *provider_config
+  - id: openrouter:poolside/laguna-xs-2.1:free
+    config: *provider_config
+
+tests:
+  - metadata:
+      probe: free-openrouter-models
+
+commandLineOptions:
+  cache: false
+  delay: 1000
+  maxConcurrency: 1
+  progressBar: false

@@ -2,6 +2,7 @@ black
 conflog
 pandas
 pandasreporter
+promptfoo
 pylint
 pylint-report
-playwright
+pyyaml
