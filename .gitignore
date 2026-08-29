@@ -1,6 +1,5 @@
 # Start of Studio gitignore
 core
-*.core
 docs/
 stage/
 # End of Studio gitignore
