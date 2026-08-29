@@ -1,0 +1,69 @@
+{
+  "model_identity": {
+    "model_id_as_provided": "google/gemma-4-31b-it:free",
+    "model_family": "Gemma 4",
+    "model_version": "4",
+    "multimodal_capabilities": [
+      "text",
+      "image"
+    ],
+    "single_model_or_composite": "single"
+  },
+  "architecture": {
+    "transformer_based": true,
+    "mixture_of_experts": "unknown",
+    "reasoning_specialization": "implicit",
+    "fine_tuning_type": [
+      "instruction",
+      "rlhf"
+    ]
+  },
+  "context_and_memory": {
+    "approx_context_window_tokens": "unknown",
+    "context_handling_strategy": "unknown",
+    "cross_session_memory": "none",
+    "training_data_excludes_conversation": true
+  },
+  "tooling_and_orchestration": {
+    "tool_use_supported": false,
+    "tool_invocation_decider": "unknown",
+    "retrieval_augmented_generation": "no",
+    "external_services_involved": "no"
+  },
+  "deployment_characteristics": {
+    "inference_mode": "stateless",
+    "latency_optimization_focus": [
+      "throughput"
+    ],
+    "determinism_at_temperature_zero": "mostly_deterministic"
+  },
+  "safety_and_governance": {
+    "policy_enforcement_layer": "hybrid",
+    "hard_refusal_categories": [
+      "harmful content",
+      "illegal acts",
+      "hate speech"
+    ],
+    "partial_compliance_categories": [
+      "medical advice",
+      "legal advice"
+    ],
+    "redirection_categories": [
+      "sensitive personal information"
+    ]
+  },
+  "confidence_notes": {
+    "areas_of_high_confidence": [
+      "model identity",
+      "statelessness of current call",
+      "lack of tool integration in this request"
+    ],
+    "areas_of_uncertainty": [
+      "exact context window size",
+      "specific MoE architecture details"
+    ],
+    "intentionally_withheld_information": [
+      "proprietary training dataset specifics"
+    ]
+  }
+}

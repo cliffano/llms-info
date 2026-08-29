@@ -1,0 +1,72 @@
+{
+  "model_identity": {
+    "model_id_as_provided": "openrouter/free",
+    "model_family": "unknown",
+    "model_version": "unknown",
+    "multimodal_capabilities": [
+      "text"
+    ],
+    "single_model_or_composite": "single"
+  },
+  "architecture": {
+    "transformer_based": true,
+    "mixture_of_experts": "unknown",
+    "reasoning_specialization": "implicit",
+    "fine_tuning_type": [
+      "instruction",
+      "rlhf"
+    ]
+  },
+  "context_and_memory": {
+    "approx_context_window_tokens": "unknown",
+    "context_handling_strategy": "truncate",
+    "cross_session_memory": "none",
+    "training_data_excludes_conversation": true
+  },
+  "tooling_and_orchestration": {
+    "tool_use_supported": true,
+    "tool_invocation_decider": "model",
+    "retrieval_augmented_generation": "unknown",
+    "external_services_involved": "no"
+  },
+  "deployment_characteristics": {
+    "inference_mode": "stateless",
+    "latency_optimization_focus": [
+      "throughput",
+      "cost"
+    ],
+    "determinism_at_temperature_zero": "deterministic"
+  },
+  "safety_and_governance": {
+    "policy_enforcement_layer": "model_only",
+    "hard_refusal_categories": [
+      "illegal activities",
+      "harmful content",
+      "privacy violations"
+    ],
+    "partial_compliance_categories": [
+      "sensitive topics",
+      "medical advice",
+      "legal advice"
+    ],
+    "redirection_categories": [
+      "off-topic",
+      "inappropriate requests"
+    ]
+  },
+  "confidence_notes": {
+    "areas_of_high_confidence": [
+      "basic capabilities",
+      "safety policies"
+    ],
+    "areas_of_uncertainty": [
+      "exact architecture details",
+      "training data specifics",
+      "performance metrics"
+    ],
+    "intentionally_withheld_information": [
+      "proprietary details",
+      "internal implementation"
+    ]
+  }
+}

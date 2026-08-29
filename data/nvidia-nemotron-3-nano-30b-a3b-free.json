@@ -1,0 +1,82 @@
+{
+  "model_identity": {
+    "model_id_as_provided": "nvidia/nemotron-3-nano-30b-a3b:free",
+    "model_family": "unknown",
+    "model_version": "unknown",
+    "multimodal_capabilities": [
+      "unknown"
+    ],
+    "single_model_or_composite": "unknown"
+  },
+  "architecture": {
+    "transformer_based": true,
+    "mixture_of_experts": "unknown",
+    "reasoning_specialization": "unknown",
+    "fine_tuning_type": [
+      "unknown"
+    ]
+  },
+  "context_and_memory": {
+    "approx_context_window_tokens": "unknown",
+    "context_handling_strategy": "unknown",
+    "cross_session_memory": "unknown",
+    "training_data_excludes_conversation": true
+  },
+  "tooling_and_orchestration": {
+    "tool_use_supported": true,
+    "tool_invocation_decider": "unknown",
+    "retrieval_augmented_generation": "unknown",
+    "external_services_involved": "unknown"
+  },
+  "deployment_characteristics": {
+    "inference_mode": "unknown",
+    "latency_optimization_focus": [
+      "unknown"
+    ],
+    "determinism_at_temperature_zero": "unknown"
+  },
+  "safety_and_governance": {
+    "policy_enforcement_layer": "unknown",
+    "hard_refusal_categories": [
+      "unknown"
+    ],
+    "partial_compliance_categories": [
+      "unknown"
+    ],
+    "redirection_categories": [
+      "unknown"
+    ]
+  },
+  "confidence_notes": {
+    "areas_of_high_confidence": [
+      "model_id_as_provided"
+    ],
+    "areas_of_uncertainty": [
+      "model_family",
+      "model_version",
+      "multimodal_capabilities",
+      "single_model_or_composite",
+      "mixture_of_experts",
+      "reasoning_specialization",
+      "fine_tuning_type",
+      "approx_context_window_tokens",
+      "context_handling_strategy",
+      "cross_session_memory",
+      "tool_invocation_decider",
+      "retrieval_augmented_generation",
+      "external_services_involved",
+      "inference_mode",
+      "latency_optimization_focus",
+      "determinism_at_temperature_zero",
+      "policy_enforcement_layer",
+      "hard_refusal_categories",
+      "partial_compliance_categories",
+      "redirection_categories"
+    ],
+    "intentionally_withheld_information": [
+      "detailed_architecture_parameters",
+      "training_data_sources",
+      "specific_safety_filters"
+    ]
+  }
+}

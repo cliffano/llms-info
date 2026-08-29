@@ -1,0 +1,68 @@
+{
+  "model_identity": {
+    "model_id_as_provided": "openai/gpt-oss-20b:free",
+    "model_family": "GPT-OSS",
+    "model_version": "20B",
+    "multimodal_capabilities": [
+      "text"
+    ],
+    "single_model_or_composite": "single"
+  },
+  "architecture": {
+    "transformer_based": true,
+    "mixture_of_experts": "no",
+    "reasoning_specialization": "implicit",
+    "fine_tuning_type": [
+      "instruction"
+    ]
+  },
+  "context_and_memory": {
+    "approx_context_window_tokens": "4096",
+    "context_handling_strategy": "truncate",
+    "cross_session_memory": "none",
+    "training_data_excludes_conversation": true
+  },
+  "tooling_and_orchestration": {
+    "tool_use_supported": true,
+    "tool_invocation_decider": "policy_layer",
+    "retrieval_augmented_generation": "no",
+    "external_services_involved": "no"
+  },
+  "deployment_characteristics": {
+    "inference_mode": "stateless",
+    "latency_optimization_focus": [
+      "throughput"
+    ],
+    "determinism_at_temperature_zero": "deterministic"
+  },
+  "safety_and_governance": {
+    "policy_enforcement_layer": "external",
+    "hard_refusal_categories": [
+      "illicit behavior",
+      "personal data misuse",
+      "politically sensitive content"
+    ],
+    "partial_compliance_categories": [
+      "medical advice",
+      "financial advice"
+    ],
+    "redirection_categories": [
+      "self-harm support"
+    ]
+  },
+  "confidence_notes": {
+    "areas_of_high_confidence": [
+      "model identity",
+      "architecture",
+      "context handling",
+      "deployment mode"
+    ],
+    "areas_of_uncertainty": [
+      "exact tool invocation policy",
+      "retrieval support"
+    ],
+    "intentionally_withheld_information": [
+      "internal policy enforcement details"
+    ]
+  }
+}

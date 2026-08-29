@@ -1,0 +1,67 @@
+{
+  "model_identity": {
+    "model_id_as_provided": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+    "model_family": "Nemotron",
+    "model_version": "3-nano-omni-30b-a3b",
+    "multimodal_capabilities": [
+      "text"
+    ],
+    "single_model_or_composite": "single"
+  },
+  "architecture": {
+    "transformer_based": true,
+    "mixture_of_experts": "unknown",
+    "reasoning_specialization": "unknown",
+    "fine_tuning_type": [
+      "instruction"
+    ]
+  },
+  "context_and_memory": {
+    "approx_context_window_tokens": "unknown",
+    "context_handling_strategy": "unknown",
+    "cross_session_memory": "none",
+    "training_data_excludes_conversation": true
+  },
+  "tooling_and_orchestration": {
+    "tool_use_supported": true,
+    "tool_invocation_decider": "model",
+    "retrieval_augmented_generation": "no",
+    "external_services_involved": "no"
+  },
+  "deployment_characteristics": {
+    "inference_mode": "stateless",
+    "latency_optimization_focus": [
+      "throughput"
+    ],
+    "determinism_at_temperature_zero": "unknown"
+  },
+  "safety_and_governance": {
+    "policy_enforcement_layer": "model_only",
+    "hard_refusal_categories": [],
+    "partial_compliance_categories": [],
+    "redirection_categories": []
+  },
+  "confidence_notes": {
+    "areas_of_high_confidence": [
+      "model_id_as_provided",
+      "transformer_based",
+      "stateless",
+      "tool_use_supported",
+      "model_only"
+    ],
+    "areas_of_uncertainty": [
+      "model_family",
+      "model_version",
+      "multimodal_capabilities",
+      "single_model_or_composite",
+      "mixture_of_experts",
+      "reasoning_specialization",
+      "fine_tuning_type",
+      "approx_context_window_tokens",
+      "context_handling_strategy",
+      "latency_optimization_focus",
+      "determinism_at_temperature_zero"
+    ],
+    "intentionally_withheld_information": []
+  }
+}

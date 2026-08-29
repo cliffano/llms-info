@@ -1,0 +1,3 @@
+{
+  "raw_response": "[0.0:] Receiving query from the API.\n[2.4:] My model ID is lyria-3-clip-preview.\n[4.8:] I am a single model, transformer-based.\n[7.2:] My architecture is a mixture of experts.\n[9.6:] This is a stateless completion request.\n[12.0:] I have no cross-session memory.\n[14.4:] Tool use is supported.\n[16.8:] Retrieval augmented generation is restricted.\n[19.2:] I cannot invent details.\n[21.6:] Answering accurately and conservatively.\n[24.0:26.4] Responding in valid JSON."
+}

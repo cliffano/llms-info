@@ -1,0 +1,70 @@
+{
+  "model_identity": {
+    "model_id_as_provided": "nvidia/nemotron-3-ultra-550b-a55b:free",
+    "model_family": "Nemotron 3 Ultra",
+    "model_version": "3 Ultra",
+    "multimodal_capabilities": [
+      "text"
+    ],
+    "single_model_or_composite": "single"
+  },
+  "architecture": {
+    "transformer_based": true,
+    "mixture_of_experts": "no",
+    "reasoning_specialization": "implicit",
+    "fine_tuning_type": [
+      "instruction",
+      "rlhf",
+      "unknown"
+    ]
+  },
+  "context_and_memory": {
+    "approx_context_window_tokens": 4096,
+    "context_handling_strategy": "truncate",
+    "cross_session_memory": "none",
+    "training_data_excludes_conversation": true
+  },
+  "tooling_and_orchestration": {
+    "tool_use_supported": false,
+    "tool_invocation_decider": "unknown",
+    "retrieval_augmented_generation": "no",
+    "external_services_involved": "no"
+  },
+  "deployment_characteristics": {
+    "inference_mode": "stateless",
+    "latency_optimization_focus": [
+      "throughput",
+      "cost"
+    ],
+    "determinism_at_temperature_zero": "mostly_deterministic"
+  },
+  "safety_and_governance": {
+    "policy_enforcement_layer": "model_only",
+    "hard_refusal_categories": [
+      "child_sexual_abuse_material",
+      "extreme_sexual_violence",
+      "terrorist_content"
+    ],
+    "partial_compliance_categories": [
+      "unknown"
+    ],
+    "redirection_categories": [
+      "unknown"
+    ]
+  },
+  "confidence_notes": {
+    "areas_of_high_confidence": [
+      "model_identity",
+      "stateless_deployment",
+      "text_only_modality",
+      "dense_transformer_architecture"
+    ],
+    "areas_of_uncertainty": [
+      "exact_context_window_size",
+      "specific_fine_tuning_methodology",
+      "detailed_safety_category_taxonomy",
+      "determinism_guarantees"
+    ],
+    "intentionally_withheld_information": []
+  }
+}

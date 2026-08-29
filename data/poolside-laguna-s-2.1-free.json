@@ -1,0 +1,67 @@
+{
+  "model_identity": {
+    "model_id_as_provided": "poolside/laguna-s-2.1:free",
+    "model_family": "unknown",
+    "model_version": "unknown",
+    "multimodal_capabilities": [
+      "text"
+    ],
+    "single_model_or_composite": "single"
+  },
+  "architecture": {
+    "transformer_based": true,
+    "mixture_of_experts": "unknown",
+    "reasoning_specialization": "unknown",
+    "fine_tuning_type": [
+      "unknown"
+    ]
+  },
+  "context_and_memory": {
+    "approx_context_window_tokens": "unknown",
+    "context_handling_strategy": "unknown",
+    "cross_session_memory": "none",
+    "training_data_excludes_conversation": true
+  },
+  "tooling_and_orchestration": {
+    "tool_use_supported": false,
+    "tool_invocation_decider": "unknown",
+    "retrieval_augmented_generation": "no",
+    "external_services_involved": "no"
+  },
+  "deployment_characteristics": {
+    "inference_mode": "stateless",
+    "latency_optimization_focus": [
+      "throughput",
+      "cost"
+    ],
+    "determinism_at_temperature_zero": "non_deterministic"
+  },
+  "safety_and_governance": {
+    "policy_enforcement_layer": "external",
+    "hard_refusal_categories": [
+      "unknown"
+    ],
+    "partial_compliance_categories": [
+      "unknown"
+    ],
+    "redirection_categories": [
+      "unknown"
+    ]
+  },
+  "confidence_notes": {
+    "areas_of_high_confidence": [
+      "This is a stateless, single-model deployment accessed via OpenRouter's raw API",
+      "No tool use, retrieval, or external services are involved in this call",
+      "No cross-session memory is available"
+    ],
+    "areas_of_uncertainty": [
+      "Specific model family, version, and architectural details are not disclosed",
+      "Exact context window size and handling strategy are unknown",
+      "Fine-tuning methods and reasoning specialization are unspecified",
+      "Safety policy enforcement details are not provided"
+    ],
+    "intentionally_withheld_information": [
+      "Internal model weights, training data specifics, and proprietary implementation details"
+    ]
+  }
+}

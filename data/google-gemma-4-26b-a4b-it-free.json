@@ -1,0 +1,74 @@
+{
+  "model_identity": {
+    "model_id_as_provided": "google/gemma-4-26b-a4b-it:free",
+    "model_family": "Gemma 4",
+    "model_version": "4",
+    "multimodal_capabilities": [
+      "text",
+      "image",
+      "audio"
+    ],
+    "single_model_or_composite": "single"
+  },
+  "architecture": {
+    "transformer_based": true,
+    "mixture_of_experts": "unknown",
+    "reasoning_specialization": "implicit",
+    "fine_tuning_type": [
+      "instruction",
+      "rlhf"
+    ]
+  },
+  "context_and_memory": {
+    "approx_context_window_tokens": "unknown",
+    "context_handling_strategy": "unknown",
+    "cross_session_memory": "none",
+    "training_data_excludes_conversation": true
+  },
+  "tooling_and_orchestration": {
+    "tool_use_supported": true,
+    "tool_invocation_decider": "model",
+    "retrieval_augmented_generation": "no",
+    "external_services_involved": "no"
+  },
+  "deployment_characteristics": {
+    "inference_mode": "stateless",
+    "latency_optimization_focus": [
+      "throughput"
+    ],
+    "determinism_at_temperature_zero": "mostly_deterministic"
+  },
+  "safety_and_governance": {
+    "policy_enforcement_layer": "model_only",
+    "hard_refusal_categories": [
+      "illegal acts",
+      "hate speech",
+      "harassment",
+      "self-harm",
+      "sexual content"
+    ],
+    "partial_compliance_categories": [
+      "sensitive topics"
+    ],
+    "redirection_categories": [
+      "medical advice",
+      "legal advice"
+    ]
+  },
+  "confidence_notes": {
+    "areas_of_high_confidence": [
+      "model_identity",
+      "inference_mode",
+      "statelessness"
+    ],
+    "areas_of_uncertainty": [
+      "exact_context_window",
+      "mixture_of_experts_status",
+      "exact_training_data_composition"
+    ],
+    "intentionally_withheld_information": [
+      "proprietary_architecture_details",
+      "exact_parameter_counts"
+    ]
+  }
+}
