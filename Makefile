@@ -36,5 +36,6 @@ lint: stage
 build: stage
 	test -n "$$OPENROUTER_API_KEY"
 	$(call python_venv,python3 scripts/probe.py)
+	$(call python_venv,python3 scripts/gen_report.py)
 
 .PHONY: ci clean stage deps deps-upgrade style lint build
